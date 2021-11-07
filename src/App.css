@@ -5,7 +5,7 @@
   margin: auto;
 }
 
-.main-container div {
+.main-container > div {
   width: 80%;
   margin: auto;
 }

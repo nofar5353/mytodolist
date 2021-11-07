@@ -2,4 +2,30 @@
   border: solid 2px black;
   width: 100%;
   background-color: blanchedalmond;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 70% 15%;
+  padding: 0px;
+  height: 80vh;
+}
+.toDoList-container ul {
+  list-style: none;
+  padding: 0px;
+}
+.toDoList-container ul li {
+  padding: 10px;
+}
+.listHeader-section {
+  border: solid 2px rgb(230, 12, 12);
+  overflow: initial;
+}
+
+.listItem-section {
+  border: solid 2px rgb(212, 131, 8);
+  overflow: auto;
+}
+
+.insertItem-section {
+  border: solid 2px rgb(25, 133, 31);
+  overflow: auto;
 }

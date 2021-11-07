@@ -1,16 +1,34 @@
-import '../css/ToDoList.css';s
+import '../css/ToDoList.css';
+import ListItem from './ListItem';
+import InsertItems from './InsertItems';
+import React, { useRef, useState } from 'react';
 
 function ToDoList() {
+const [tasks, setTasks] = useState([])
+
+console.log(tasks)
+
+function addTask(task){
+setTasks(preTasks => {
+  return[...preTasks , task]
+})
+}
+
     return (
-      <div class="toDoList-container">
-        <div class="listHeader-section">
+      <div className="toDoList-container">
+        <div className="listHeader-section">
         <h1>TO DO</h1>
         </div>
-        <div class="listItem-section">
+        <div className="listItem-section">
+            <ul>
+              {tasks.map(task=>(
+                <li><ListItem text={task.content}/></li>
+              ))}
 
+            </ul>
         </div>
-        <div class="insertItem-section">
-
+        <div className="insertItem-section">
+        <InsertItems addTask={addTask} />
         </div>
       </div>
     );
