@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 80% 20%;
   justify-content: center;
-  border: tomato;
 }
 
 .insertItem-container div {
@@ -19,7 +18,7 @@
 
 .insertItem-container button {
   background-color: rgba(251, 253, 250, 0.7);
-  box-shadow: 1px 2px 4px #888888;
+  box-shadow: 1px 1px 1px #888888;
   border-radius: 8px;
   color: rgb(19, 105, 19);
   border: rgb(19, 105, 19) solid 1px;
@@ -30,5 +29,5 @@
 .insertItem-container button:hover {
   cursor: pointer;
   background-color: rgba(19, 105, 19, 0.7);
-  transform: translate(0px, -2px);
+  color: white;
 }

@@ -1,31 +1,38 @@
 .toDoList-container {
-  border: solid 2px black;
+  box-shadow: 2px 2px 4px #494949;
+  border-radius: 4px;
   width: 100%;
-  background-color: blanchedalmond;
+  height: 100%;
+  background-color: rgb(255, 255, 252);
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 15% 70% 15%;
   padding: 0px;
-  height: 80vh;
 }
 .toDoList-container ul {
   list-style: none;
   padding: 0px;
 }
 .toDoList-container ul li {
-  padding: 10px;
+  padding: 2%;
 }
+
 .listHeader-section {
-  border: solid 2px rgb(230, 12, 12);
   overflow: initial;
+  margin: auto;
+  text-align: center;
 }
 
 .listItem-section {
-  border: solid 2px rgb(212, 131, 8);
   overflow: auto;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
 .insertItem-section {
-  border: solid 2px rgb(25, 133, 31);
   overflow: auto;
+  margin: auto;
+  width: 100%;
 }

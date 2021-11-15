@@ -4,13 +4,29 @@
   border-radius: 8px;
   padding: 1%;
   display: grid;
-  grid-template-columns: 8% 84% 8%;
+  grid-template-rows: 40% 60%;
 }
 
 .listItem-container:hover {
   cursor: pointer;
   background-color: rgba(224, 224, 224, 0.7);
   transform: translate(0px, -5px);
+}
+
+.listItem-firstRow {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+}
+
+.listItem-firstRow p {
+  padding: 0px;
+  margin: 0px;
+  font-size: 0.8rem;
+  color: #888888;
+}
+.listItem-secondRow {
+  padding: 0.5rem;
+  margin: 0px;
 }
 
 .listItem-trashBtn {
@@ -20,10 +36,11 @@
 }
 .listItem-trashBtn:hover {
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: red;
 }
 
-.listItem-leftSection {
+.listItem-secondRow {
   word-wrap: break-word;
+  word-break: break-all;
 }

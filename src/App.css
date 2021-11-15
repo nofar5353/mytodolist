@@ -1,11 +1,17 @@
 .main-container {
-  background-color: rgb(133, 113, 151);
-  height: 800px;
+  background-image: url("../src/css/img/board-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
   width: 100%;
   margin: auto;
+  font-family: "Ubuntu";
 }
 
-.main-container > div {
-  width: 80%;
+.toDoListContainer {
+  position: relative;
+  height: 80%;
+  width: 60%;
   margin: auto;
+  top: 5%;
 }

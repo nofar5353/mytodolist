@@ -1,10 +1,22 @@
-import './App.css';
-import ToDoList from './components/ToDoList';
+import "./App.css";
+import ToDoList from "./components/ToDoList";
+import WebFont from "webfontloader";
+import React, { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ["Droid Sans", "Chilanka", "Ubuntu"],
+      },
+    });
+  }, []);
+
   return (
-    <div class="main-container">
-    <ToDoList/>
+    <div className="main-container">
+      <div className="toDoListContainer">
+        <ToDoList />
+      </div>
     </div>
   );
 }
